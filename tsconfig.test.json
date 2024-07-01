@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./.next/test", // Adjust the output directory as per your project structure
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "strict": true
+  },
+  "include": ["app/tests/**/*.ts", "app/tests/**/*.tsx"],
+  "exclude": ["node_modules"]
+}
